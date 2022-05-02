@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Ron Stuchevsky Portfolio Webpage">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/hamburger.css">
+        <title>Ron Website</title>
+        <link rel="icon" type="image/x-icon" href="imgs/favicon.ico" />
+    </head>
+    <body id="body">
+        <!-- <img class="pic" src="imgs/keyboardStock.jpg" alt="photograph of meta"> -->
+        <div id = "top" class = "top">
+            <div id="hamburger" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="./index.html" onclick="closeNav()">Home</a>
+                  <a href="./about.html" onclick="closeNav()">About</a>
+                  <a href="./project.html" onclick="closeNav()">Projects</a>
+                </div>
+              </div>
+              <span class ="bar" onclick="openNav()">&#9776;</span>
+              <button id = "darkBtn" onclick="darkMode()" class = "dark" role="button">Dark Mode</button>
+        </div>
+        <br><br><br><br><br><br>
+        <div id = "mid" class = "mid"> 
+            <div id = "mid-top" class = "mid-top">
+                <!-- <h2 id="About">Hello, </h2> -->
+                <p>My name is <a href="about.html" class="personalLink" id ="link"><b>Ron</b></a>, 
+                    I'm a <b><i>software developer</i></b> and a <b><i>computer science student.</i></b></p>
+            </div>
+            <div class = "mid-bot" id = "mid-bot">
+                <div>
+                    <a href = "https://github.com/ronKzl" target="_blank" class="links">
+                    GitHub
+                    <!-- <img class="pic" src="imgs/git2.png" alt="github link"> -->
+                    </a>
+                </div>
+                <div>
+                    <a href = "https://www.linkedin.com/in/ron-stuchevsky-2b478722a/" target="_blank" class="links">
+                    LinkedIn
+                    <!-- <img class="pic" src="imgs/linkedIn.png" alt="linkedIn Link"> -->
+                    </a>
+                </div>
+                <div>
+                    <a data-email="ron.stuchevsky@gmail.com" href="mailto:ron.stuchevsky@gmail.com" class="links">
+                    Contact
+                    <!-- <img class="pic" src="imgs/gmail2.png" alt="gmail link" descr> -->
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    <script src="js/darkModeIndex.js"></script>
+    <script src ="js/hamburgerMenu.js"></script>
+    </body>
+</html>

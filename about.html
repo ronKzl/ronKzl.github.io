@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Ron Stuchevsky Portfolio Webpage">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="stylesheet" href="css/hamburger.css">
+        <title>Ron Portfolio</title>
+        <link rel="icon" type="image/x-icon" href="imgs/favicon.ico" />
+    </head>
+    <body id="body">
+        <!-- <img class="pic" src="imgs/keyboardStock.jpg" alt="photograph of meta"> -->
+        <div id = "top" class = "top">
+            <div id="hamburger" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="./index.html" onclick="closeNav()">Home</a>
+                  <a href="./about.html" onclick="closeNav()">About</a>
+                  <a href="./project.html" onclick="closeNav()">Projects</a>
+                </div>
+              </div>
+              <span class ="bar" onclick="openNav()">&#9776;</span>
+              <button id = "darkBtn" onclick="darkMode()" class = "dark" role="button">Dark Mode</button>
+        </div>
+        <br><br><br><br><br><br>
+        <div id = "mid" class = "mid"> 
+            <div id = "mid-top" class = "mid-top">
+                <!-- <div class = square>
+                    <img class="pic" src="imgs/test.jpg" alt="photograph of meta">
+                </div> -->
+                <h2 id="About">Hello! </h2>
+                <p>I am a 2nd year Computer Science student 
+                    at Carleton University in the B.C.S Honours stream of computer and internet security.</p>
+                <p> I like coding because it feels very fun and rewarding when you finally connect all of the puzzle pieces
+                    that you have in your project and see them work together. 
+                </p>
+                <p>
+                    Coding is without it's challanges but to me it always feels worth it, I always end up learning
+                    something new and interesting that I can use whyen I tackle my future projects!
+                </p>
+                <!-- <p>
+                    In my free time I like to play video games, catch up with my friend group and of course 
+                    code!
+                </p> -->
+            </div>
+        </div>
+    <script src="js/darkModeAbout.js"></script>
+    <script src ="js/hamburgerMenu.js"></script>
+    </body>
+</html>

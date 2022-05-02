@@ -1,0 +1,223 @@
+html{
+    margin: 0;
+    height: 100%;
+    background-image: url('../imgs/R.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+body{
+    height: 100%;
+    width:100%;
+    font-family: 'Cambria',Arial,sans-serif;
+    font-size: 2rem;
+    color: black; 
+    background-size: cover;
+    resize: both;
+    overflow: auto; 
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    
+  }
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+.top{
+    float:right;
+    margin: 1rem;
+    
+    size: 10%;
+}
+h2 {
+  text-align: left;
+  
+}
+.mid-top{
+    text-align: center;
+    width:50%;
+     margin: 0 auto; 
+    font-size: 3rem;
+    display: block;
+    background-color: white;
+    padding: 150px 80px 150px 80px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
+}
+.links{
+  color: white;
+  text-decoration: none;
+}
+.links:hover{
+  color: rgb(255, 229, 192);
+}
+.personalLink { 
+  color: black;
+  text-decoration: underline;
+ text-decoration-color: blue;
+} 
+.personalLink:hover { 
+  text-decoration: underline;
+	text-decoration-color: rgb(142, 164, 230);
+} 
+.mid-bot{
+   
+   background-color: black;
+   justify-content: space-between; 
+   width:50%;
+    height: 10%;
+    margin: 0 auto; /* auto */
+    font-size: 2rem;
+    display: flex;
+    padding: 10px 80px 10px 80px;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
+}
+/* Dark Mode button CSS */
+.dark {
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Cambria',Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  height: 20%;
+}
+.dark:focus {
+  text-decoration: none;
+}
+.dark:hover {
+  text-decoration: none;
+}
+.dark:active {
+  box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+  outline: 0;
+}
+.dark:not([disabled]):active {
+  box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+@media (min-width: 768px) {
+  .dark {
+    padding: 12px 50px;
+  }
+}
+/* what to do on dark mode */
+.dark-mode{
+    background-color: #0a0c10; 
+    color: #f0f3f6;
+}
+.dark-border{
+    border-bottom-color: white;
+}
+/* Smartphone compatbility: Iphone 6 generation and up, Pixel 2nd gen and up. */
+@media (max-width: 812px) and (min-width: 375px) {
+ 
+  .mid-top{
+    font-size: 80%;
+    width:60%;
+    text-align: left;
+    padding: 50px 40px 50px 40px;
+
+  }
+  .mid-bot{
+    margin-bottom: 25%; 
+    font-size: 1rem;
+      width:60%;
+      padding: 20px 40px 20px 40px;
+  }
+  
+}
+/* Smartphone compatbility: Galaxy 8th gen and up. */
+@media (max-width: 374px) {
+  
+  .mid-top{
+    font-size: 24px;
+    width:60%;
+    padding-bottom: 10%;
+    text-align: left;
+    padding: 50px 40px 50px 40px;
+
+  }
+  .mid-bot{
+    margin-bottom: 25%; 
+    font-size: 1rem;
+    width:60%;
+    padding: 20px 40px 20px 40px;
+
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}

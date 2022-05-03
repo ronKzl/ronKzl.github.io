@@ -191,7 +191,7 @@ a:hover {
 }
 
 /* Smartphone compatbility: Iphone 6 generation and up, Pixel 2nd gen and up. */
-@media (max-width: 1700px) and (min-width: 1000px) {
+@media (max-width: 1750px) and (min-width: 1000px) {
   .stickyBtn{
     width: 15%;
   }

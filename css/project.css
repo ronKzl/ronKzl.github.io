@@ -76,13 +76,12 @@ hr{
   -ms-animation: fadeIn  1s;
 }
 a { 
- color: black;
- text-decoration: underline;
- text-decoration-color: blue;
+ color: rgb(90, 90, 255);
+ text-decoration: none;
+ 
 } 
 a:hover { 
-  text-decoration: underline;
-	text-decoration-color: rgb(142, 164, 230);
+  color:#837272;
 } 
 /* Dark Mode button CSS */
 .dark {

@@ -11,6 +11,10 @@
     transition: 0.5s;
   }
   
+span{
+  cursor: pointer;
+    }
+
   .overlay-content {
     position: relative;
     top: 25%;

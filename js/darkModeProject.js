@@ -1,29 +1,6 @@
 function darkMode() {
     bodyDarkMode();
     borderDarkMode();
-    linkDarkMode();
-}
-
-function linkDarkMode(){
-    let firstLink = document.getElementById("linkF");
-    let secondLink = document.getElementById("linkS");
-    let thirdLink = document.getElementById("linkT");
-    let fourthLink = document.getElementById("linkFo");
-    let fifthLink = document.getElementById("linkH");
-    
-    if(!pureDarkMode()){
-        firstLink.style.color = "black";
-        secondLink.style.color = "black";
-        thirdLink.style.color = "black";
-        fourthLink.style.color = "black";
-        fifthLink.style.color = "black";
-        return;
-    }
-    firstLink.style.color = "#f0f3f6";
-    secondLink.style.color = "#f0f3f6";
-    thirdLink.style.color = "#f0f3f6";
-    fourthLink.style.color = "#f0f3f6";
-    fifthLink.style.color = "#f0f3f6";
 }
 
 function pureDarkMode(){

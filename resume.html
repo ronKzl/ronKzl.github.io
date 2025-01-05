@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Ron Resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico" />
+    <style>
+        /* Ensure full height and width of the page */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa; /* Optional background color */
+        }
+
+        iframe {
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            border: none; /* Remove default iframe border */
+            max-width: 100vw; /* Ensure it doesn't exceed the viewport width */
+            max-height: 100vh; /* Ensure it doesn't exceed the viewport height */
+        }
+    </style>
+</head>
+<body>
+    <!-- Adding 'zoom=150' to scale the PDF -->
+    <iframe id="frame" src="docs/Ron_Stuchevsky_Resume_2025.pdf#zoom=170"></iframe>
+</body>
+</html>

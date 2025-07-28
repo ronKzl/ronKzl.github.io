@@ -1,0 +1,57 @@
+html {
+  margin: 0;
+  height: 100%;
+  background-color: #222; /* Light background for better readability */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px auto; /* Scale image */
+  background-attachment: fixed;
+}
+
+body {
+  font-family: 'Cambria', Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #222#f7f7f7; /* Darker text for contrast */
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9); /* Light overlay for text readability */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Links */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Hide scrollbar for smooth look */
+body::-webkit-scrollbar {
+  display: none;
+}
+.top{
+    float:right;
+    margin: 1rem;
+    size: 10%;
+    color: black
+}

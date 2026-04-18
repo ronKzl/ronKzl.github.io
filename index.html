@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ron Kizilov Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <div class="logo"><span>Ron</span> Kizilov</div>
+        <nav class="nav">
+          <a href="#main">About</a>
+          <a href="#experience">Experience</a>
+          <a href="blog.html">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="shell" id="main">
+      <!-- About + Runtime Combined -->
+      <section id="about">
+        <h2 class="section-title"><strong>About Me</strong> /.</h2>
+        <div class="frame frame--loud">
+          <div class="frame__label">Profile / Overview</div>
+          <div class="frame__inner">
+            <div class="about-intro">
+              <div class="hero-title">
+                BOLD <br />
+                TEXT
+              </div>
+              <div class="hero-sub">lorem</div>
+              <div class="hero-tags">
+                <span class="tag">Design Engineer</span>
+                <span class="tag">Creative Coding</span>
+                <span class="tag">Interaction Systems</span>
+                <span class="tag">Front-End Architecture</span>
+              </div>
+              <div class="about-links">
+                <a href="/resume.html" class="pixel-hover"
+                  ><img src="imgs/pdf.png" style="filter: invert(1)" alt="Resume" /> Resume</a
+                >
+                <a href="#" class="pixel-hover">
+                  <img src="imgs/git.png" alt="GitHub" />GitHub</a
+                >
+                <a href="#" class="pixel-hover">
+                  <img src="imgs/linked.png" alt="LinkedIn" /> LinkedIn</a
+                >
+              </div>
+            </div>
+
+            <div class="about-grid">
+              <div class="about-photo">
+                <div class="about-photo__frame"></div>
+                <div class="about-photo__tag">Signature / Presence</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Experience -->
+      <section id="experience">
+        <h2 class="section-title"><strong>Experience</strong> /.</h2>
+        <div class="frame frame--loud">
+          <div class="frame__label">Content / Hub</div>
+          <div class="frame__inner">
+            <div class="experience-cards" id="experienceCards"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <h2 class="section-title"><strong>Contact</strong> /.</h2>
+        <div class="frame">
+          <div class="frame__label">Signal / Input</div>
+          <div class="frame__inner">
+            <div class="contact-grid">
+              <form id="contactForm" novalidate>
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" placeholder="Enter your name" />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                  />
+                </div>
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Never gonna give you up, never gonna let you down, never gonna run around and desert you..."
+                  ></textarea>
+                </div>
+                <button class="contact-submit pixel-hover" type="submit">
+                  Send Transmission
+                </button>
+              </form>
+
+              <div class="contact-meta">
+                <p>
+                  <strong>Short on time?</strong> You can also reach out
+                  directly to my socials.
+                </p>
+                <dl>
+                  <dt>Email</dt>
+                  <dd><a href="mailto:you@example.com">you@example.com</a></dd>
+                  <dt>LinkedIn</dt>
+                  <dd>
+                    <a href="#" target="_blank" rel="noopener"
+                      >/in/your-handle</a
+                    >
+                  </dd>
+                </dl>
+                <p style="margin-top: 0.8rem">something here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Ron Kizilov — All rights reserved.
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/experience.js"></script>
+  </body>
+</html>

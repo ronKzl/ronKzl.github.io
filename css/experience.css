@@ -1,0 +1,262 @@
+/* .page-hero {
+  grid-column: 1 / -1;
+} */
+
+/* .experience-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: var(--gutter);
+} */
+
+/* @media (max-width: 800px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+} */
+
+/* .roles-list {
+  border-right: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .role-item {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 2px solid var(--border);
+  cursor: pointer;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 90ms ease-out, transform 90ms ease-out,
+    box-shadow 90ms ease-out;
+} */
+
+/* .role-item span {
+  color: var(--muted);
+  font-size: 0.7rem;
+  text-transform: none;
+  letter-spacing: normal;
+} */
+
+/* .role-item:hover {
+  background: #111111;
+  transform: translateX(2px);
+}
+
+.role-item.active {
+  background: var(--accent);
+  color: #050505;
+  box-shadow: 3px 0 0 #000000 inset;
+}
+
+.role-item.active span {
+  color: #050505;
+}
+
+.role-detail {
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+} */
+
+/* .role-detail__title {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.role-detail__headline {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.role-detail__meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.role-detail__media {
+  margin-top: 0.5rem;
+  border: 2px solid var(--border);
+  background: radial-gradient(circle at 20% 20%, #202d10, #050505 60%);
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.role-detail__bullets {
+  margin-top: 0.25rem;
+  padding-left: 1.1rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.role-detail__bullets li {
+  margin-bottom: 0.15rem;
+} */
+
+/* .experience-cards {
+  display: none;
+  margin-top: 1rem;
+  border-top: 2px solid var(--border);
+}
+
+/* Want this this the default for mobile and desktop displays */
+
+/* .experience-desktop {
+  display: none;
+} */
+
+/* .experience-cards {
+  display: block;
+}
+
+
+.exp-card {
+  border-bottom: 2px solid var(--border);
+}
+
+.exp-card__header {
+  padding: 0.7rem 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  background: #050505;
+}
+
+.exp-card__header span {
+  color: var(--muted);
+  font-size: 0.7rem;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.exp-card__toggle {
+  font-size: 1rem;
+  transition: transform 120ms ease-out;
+}
+
+.exp-card.open .exp-card__toggle {
+  transform: rotate(90deg);
+}
+
+.exp-card__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 160ms ease-out;
+  padding: 0 0.75rem;
+  font-size: 0.8rem;
+}
+
+.exp-card.open .exp-card__body {
+  padding-bottom: 0.75rem;
+}
+
+.exp-card__summary {
+  margin: 0.4rem 0 0.4rem;
+  color: var(--muted);
+} */ */
+
+
+/* -----------------------------------------
+   EXPERIENCE ACCORDION (MOBILE & DESKTOP)
+   ----------------------------------------- */
+.experience-cards {
+  display: block;
+  width: 100%;
+  border-top: 2px solid var(--border);
+  /* Gives the section vertical weight so it doesn't look empty when collapsed on PC */
+  min-height: 40vh; 
+}
+
+.exp-card {
+  border-bottom: 2px solid var(--border);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.exp-card__header {
+  padding: 1rem 1.25rem; /* Scaled up for desktop proportions */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  background: #050505;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background 120ms ease-out;
+}
+
+.exp-card__header:hover {
+  background: #111111; /* Adds a subtle tactile rollover for desktop mouse users */
+}
+
+.exp-card__header span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.exp-card__toggle {
+  font-size: 1.2rem;
+  transition: transform 120ms ease-out;
+}
+
+.exp-card.open .exp-card__toggle {
+  transform: rotate(90deg);
+}
+
+.exp-card__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 160ms ease-out;
+  padding: 0 1.25rem; /* Matches header padding */
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.exp-card.open .exp-card__body {
+  padding-top: 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.exp-card__summary {
+  margin: 0 0 0.75rem 0;
+  color: var(--muted);
+  font-size: 1.05rem; /* Slightly larger headline to command space on desktop */
+}
+
+.role-detail__bullets {
+  margin-top: 0.25rem;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.role-detail__bullets li {
+  margin-bottom: 0.25rem;
+}
+
+.role-detail__meta {
+  margin-top: 1rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}

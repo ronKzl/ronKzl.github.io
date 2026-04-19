@@ -435,6 +435,18 @@ section {
   box-shadow: 3px 3px 0 #000000;
   transition: transform 90ms ease-out, box-shadow 90ms ease-out,
     background 90ms;
+  display: inline-flex;  
+  align-items: center;   
+  gap: 0.5em;
+              
+}
+
+.about-links a img {
+  display: inline-block; /* Overrides the global img { display: block; } */
+  height: 1.2em; 
+  width: 1.2em;
+  object-fit: contain; 
+  margin: 0;           
 }
 
 .about-links a:hover {
@@ -552,5 +564,9 @@ footer {
 .pixel-hover:hover {
   transform: translate(-4px, -4px);
   box-shadow: 7px 7px 0 #000000;
+}
+
+.pdf-icon {
+  filter: invert(1)
 }
 

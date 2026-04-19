@@ -1,6 +1,7 @@
 const roles = [
   {
     id: "shopify",
+    logo: "imgs/shopify.png",
     title: "Software Engineer Intern",
     company: "Shopify",
     years: "Sept 2025 - Dec 2025",
@@ -19,6 +20,7 @@ const roles = [
   },
   {
     id: "jsi-telecom",
+    logo: "imgs/jsi.png",
     title: "FullStack Engineer Intern",
     company: "JSI Telecom",
     years: "May 2024 - Dec 2024",
@@ -37,9 +39,28 @@ const roles = [
   },
   {
     id: "ross-video",
+    logo: "imgs/ross.png",
     title: "Software Engineer Intern",
     company: "Ross Video",
     years: "Jan 2024 - Apr 2024",
+    location: "Ottawa, CA",
+    headline:
+      "Engineered stable C++ firmware utilities and resolved critical multi-threading defects.",
+    bullets: [
+      "Developed C++ packaging utilities, a CLI tool, and a checksum-verified protocol for secure CX hardware updates.",
+      "Eliminated screen flickering on production control panels during live broadcasts by optimizing C display logic.",
+      "Identified and resolved deadlocks and multi-threaded race conditions in production code using mutex synchronization.",
+    ],
+    mediaLabel: "Hardware Diagnostics",
+    mediaBody:
+      "Low-level synchronization and memory management to guarantee 100% patch integrity for remote broadcasting hardware.",
+  },
+  {
+    id: "kinaxis",
+    logo: "imgs/kinaxis-red.png",
+    title: "Software Engineer Intern",
+    company: "Kinaxis",
+    years: "May 2023 - Sept 2023",
     location: "Ottawa, CA",
     headline:
       "Engineered stable C++ firmware utilities and resolved critical multi-threading defects.",
@@ -66,9 +87,26 @@ function renderExperienceCards() {
     const card = document.createElement("div");
     // card.className = "exp-card" + (index === 0 ? " open" : "");
     card.className = "exp-card";
+    // card.innerHTML = `
+    //   <div class="exp-card__header">
+    //     <div>${role.title}<br><span>${role.company}</span></div>
+    //     <div class="exp-card__toggle">&gt;</div>
+    //   </div>
+    //   <div class="exp-card__body">
+    //     <p class="exp-card__summary">${role.headline}</p>
+    //     <p>${role.mediaBody}</p>
+    //     <ul class="role-detail__bullets">
+    //       ${role.bullets.map((bullet) => `<li>${bullet}</li>`).join("")}
+    //     </ul>
+    //     <p class="role-detail__meta">${role.years} · ${role.location}</p>
+    //   </div>
+    // `;
     card.innerHTML = `
       <div class="exp-card__header">
-        <div>${role.title}<br><span>${role.company}</span></div>
+        <div class="exp-card__title-group">
+          <img src="${role.logo}" alt="${role.company} Logo" class="exp-card__logo" />
+          <div>${role.title}<br><span>${role.company}</span></div>
+        </div>
         <div class="exp-card__toggle">&gt;</div>
       </div>
       <div class="exp-card__body">

@@ -16,7 +16,7 @@
           <a href="#main">About</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
-          <a href="blog.html">Blog</a>
+          <!-- <a href="blog.html">Blog</a> -->
         </nav>
       </div>
     </header>
@@ -30,15 +30,42 @@
           <div class="frame__inner">
             <div class="about-intro">
               <div class="hero-title">
-                BOLD <br />
-                TEXT
+                Hi! <br />
+                I'm Ron
               </div>
-              <div class="hero-sub">lorem</div>
+              <div class="hero-sub">
+                <p>
+                  A recent Computer Science graduate (with high distinction)
+                  from Carleton University. During my studies, I had the
+                  privilege of working at
+                  <a href="#experience">a lawful intelligence agency</a>,
+                  <a href="#experience">a supply management firm</a>,
+                  <a href="#experience">a live broadcasting corporation</a>, and
+                  <a href="#experience">an e-commerce giant</a>—collaborating
+                  with stakeholders and customers to ship resilient, high-impact
+                  features.
+                </p>
+
+                <p>
+                  I love engineering because it lets me dive into complex
+                  domains and build tools for the people who live and breathe
+                  them. There is nothing better than architecting systems that
+                  accelerate workflows and make daily operations effortless for
+                  the end user.
+                </p>
+
+                <p>
+                  When I am not at my keyboard, you can usually find me outside
+                  hiking and photographing old ruins, or in the kitchen
+                  experimenting with devious recipes that your dusty cookbook
+                  has never seen.
+                </p>
+              </div>
               <div class="hero-tags">
-                <span class="tag">Design Engineer</span>
-                <span class="tag">Creative Coding</span>
-                <span class="tag">Interaction Systems</span>
-                <span class="tag">Front-End Architecture</span>
+                <span class="tag">Front-End</span>
+                <span class="tag">Backend</span>
+                <span class="tag">Automation</span>
+                <span class="tag">AI Engineer</span>
               </div>
               <div class="about-links">
                 <a href="/resume.html" class="pixel-hover" target="_blank"
@@ -62,11 +89,12 @@
                 >
               </div>
             </div>
-
-            <div class="about-grid">
-              <div class="about-photo">
-                <div class="about-photo__frame"></div>
-                <div class="about-photo__tag">Signature / Presence</div>
+            <div class="about-photo">
+              <div class="about-photo__frame">
+                <img src="imgs/pic3.jpg" />
+              </div>
+              <div class="about-photo__tag">
+                Today's Graduate // Tomorrow's Architect
               </div>
             </div>
           </div>
@@ -89,10 +117,19 @@
           <div class="frame__label">Signal / Input</div>
           <div class="frame__inner">
             <div class="contact-grid">
-              <form id="contactForm" novalidate>
+              <form
+                id="contactForm"
+                action="https://formspree.io/f/mkokvrwd"
+                method="POST"
+              >
                 <div class="field">
                   <label for="name">Name</label>
-                  <input id="name" name="name" placeholder="Enter your name" />
+                  <input
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
                 </div>
                 <div class="field">
                   <label for="email">Email</label>
@@ -101,6 +138,7 @@
                     name="email"
                     type="email"
                     placeholder="Enter your email address"
+                    required
                   />
                 </div>
                 <div class="field">
@@ -110,6 +148,7 @@
                     name="message"
                     rows="4"
                     placeholder="Never gonna give you up, never gonna let you down, never gonna run around and desert you..."
+                    required
                   ></textarea>
                 </div>
                 <button class="contact-submit pixel-hover" type="submit">
@@ -117,7 +156,23 @@
                 </button>
               </form>
 
-              <div class="contact-meta"></div>
+              <div class="contact-meta desktop-only">
+                <pre class="ascii-art">
+   _______________________
+  |/                     \|
+  ||   [ TRANSMISSION ]  ||
+  ||                     ||
+  ||   > STATUS: READY   ||
+  ||   > UPLINK: SECURE  ||
+  ||   > ENCRYPT: AES256 ||
+  ||                     ||
+  ||   |||||||||||||||   ||
+  |\_____________________/|
+  +-----------------------+
+  |  (o)             (o)  |
+  +-----------------------+
+                </pre>
+              </div>
             </div>
           </div>
         </div>
@@ -127,7 +182,6 @@
     <footer>
       © <span id="year"></span> Ron Kizilov — All rights reserved.
     </footer>
-
     <script src="js/main.js"></script>
     <script src="js/experience.js"></script>
   </body>
